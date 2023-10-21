@@ -33,4 +33,3 @@
         secondIncorrectNode.val = temp;
     }
 };
-    
