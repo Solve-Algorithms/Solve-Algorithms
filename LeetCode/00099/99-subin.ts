@@ -1,6 +1,8 @@
+import { TreeNode } from "../common";
 /**
  Do not return anything, modify root in-place instead.
  */
+
  function recoverTree(root: TreeNode | null): void {
     let firstIncorrectNode = null as TreeNode | null;
     let secondIncorrectNode = null as TreeNode | null;

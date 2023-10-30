@@ -1,3 +1,5 @@
+import { TreeNode } from "../common";
+
 function isSymmetric(root: TreeNode | null): boolean {
     const mirrorTemp: any[] = [];
     let left = root?.left;
