@@ -1,0 +1,35 @@
+name: add-problems
+on:
+  push:
+    paths:
+      - 'jobs/addProblems/**'
+    branches:
+      - 'main'
+
+jobs:
+  add-problems:
+    name: add-problems
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: oven-sh/setup-bun@v1
+
+      - name: install
+        run: bun install
+
+      - name: update file
+        run: bun ./jobs/addProblems/index.ts
+
+      - name: commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Add Problem [bot]" -a
+
+      - name: push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'main'
