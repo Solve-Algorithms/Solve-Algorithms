@@ -1,0 +1,60 @@
+{
+  "2023": {
+    "10/20 ~ 10/26": [
+      {
+        "platform": "leetcode",
+        "id": 99,
+        "title": "Recover Binary Search Tree",
+        "url": "https://leetcode.com/problems/recover-binary-search-tree/"
+      },
+      {
+        "platform": "leetcode",
+        "id": 101,
+        "title": "Symmetric Tree",
+        "url": "https://leetcode.com/problems/symmetric-tree/"
+      }
+    ],
+    "10/27 ~ 11/2": [
+      {
+        "platform": "leetcode",
+        "id": 102,
+        "title": "Binary Tree Level Order Traversal",
+        "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+      },
+      {
+        "platform": "leetcode",
+        "id": 103,
+        "title": "Binary Tree Zigzag Level Order Traversal",
+        "url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/"
+      }
+    ],
+    "11/3 ~ 11/16": [
+      {
+        "platform": "leetcode",
+        "id": 105,
+        "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+        "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+      },
+      {
+        "platform": "leetcode",
+        "id": 106,
+        "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+        "url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+      }
+    ],
+    "11/17 ~ 11/23": [
+      {
+        "platform": "leetcode",
+        "id": 107,
+        "title": "Binary Tree Level Order Traversal II",
+        "url": "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/"
+      },
+      {
+        "platform": "leetcode",
+        "id": 108,
+        "title": "Convert Sorted Array to Binary Search Tree",
+        "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/"
+      }
+    ]
+  }
+}
