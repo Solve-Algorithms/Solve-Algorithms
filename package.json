@@ -1,0 +1,9 @@
+{
+  "name": "Solve-Algorithms",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "ts-pattern": "^5.0.5",
+    "typescript": "^5.2.2"
+  }
+}
