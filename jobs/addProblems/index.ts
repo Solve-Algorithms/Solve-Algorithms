@@ -80,17 +80,16 @@ function createDirectory(problems: Array<Problem>) {
           const directoryName = problem.id.toString().padStart(5, '0');
           const directoryPath = `${leetcodePath}/${directoryName}`;
 
-          if (fs.existsSync(directoryPath)) {
-            return;
+          if (!fs.existsSync(directoryPath)) {
+            fs.mkdirSync(directoryPath);
+            console.log(`SYSTEM:: ${directoryPath}/README.md 생성 완료`);
           }
-
-          fs.mkdirSync(directoryPath);
 
           fs.writeFileSync(
             `${directoryPath}/README.md`,
             LEETCODE_README_TEMPLATE(problem)
           );
-          console.log(`SYSTEM:: ${directoryPath}/README.md 생성 완료`);
+          console.log(`SYSTEM:: ${directoryPath}/README.md 수정 완료`);
         })
         .otherwise(() => null);
     }
