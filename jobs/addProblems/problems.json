@@ -55,6 +55,20 @@
         "title": "Convert Sorted Array to Binary Search Tree",
         "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/"
       }
+    ],
+    "11/24 ~ 11/30": [
+      {
+        "platform": "leetcode",
+        "id": 109,
+        "title": "Convert Sorted List to Binary Search Tree",
+        "url": "https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/"
+      },
+      {
+        "platform": "leetcode",
+        "id": 110,
+        "title": "Balanced Binary Tree",
+        "url": "https://leetcode.com/problems/balanced-binary-tree/"
+      }
     ]
   }
 }
