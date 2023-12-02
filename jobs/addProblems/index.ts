@@ -50,6 +50,20 @@ function parseDateRange(year: Year, dateRange: DateRange) {
   };
 }
 
+/** url의 마지막 문자열로 title을 만들어냄 */
+function getTitleFromUrl(url: string): string {
+	const matches = url.match(/\/([^\/]+)\/?$/);
+
+	if (matches && matches[1]) {
+		return matches[1]
+			.split('-')
+			.map(word => word.charAt(0).toUpperCase() + word.slice(1))
+			.join(' ');
+	} else {
+		return "Untitled";
+	}
+}
+
 /** 여러 depth로 year, dateRange를 key로 쓰는 json을 평탄화 */
 function flattenData(data: Data): Array<Problem> {
   const res = [] as Array<Problem>;
@@ -63,7 +77,7 @@ function flattenData(data: Data): Array<Problem> {
       );
 
       for (const problem of problems) {
-        res.push({ ...problem, startDate, endDate });
+        res.push({ ...problem, startDate, endDate, title: problem.title || getTitleFromUrl(problem.url) });
       }
     }
   }
